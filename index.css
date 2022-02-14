@@ -1,0 +1,129 @@
+*,*::after,*::after{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body{
+    background-color: hsl(0, 0%, 100%) ;
+}
+.container{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.head{
+    text-align: center;
+    font-weight: 900;
+    /* line-height: 2rem; */
+    padding: 2rem 0 .5rem;
+    color: hsl(300, 43%, 22%);
+}
+.intro-content{
+    color: hsl(300, 43%, 22%);
+    font-weight: 400;
+    text-align-last: center;
+}
+
+.rating-card{
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    padding: 0.1rem 0;
+}
+
+
+/* card section */
+.card{
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.card-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.profile-img{
+    border-radius: 100px;
+    /* border: 2px red solid; */
+}
+.d-flex{
+    display: flex;
+    /* border: 2px red solid; */
+}
+.card-intro{
+    margin-left: 2rem;
+}
+.card-intro-head{
+    margin-bottom: 0;
+    color: hsl(300, 24%, 96%);
+}
+.card-intro-subhead {
+    padding-top: .2rem;
+    color:hsl(333, 80%, 67%);
+    margin: 0;
+}
+/* *******************************  */
+@media (min-width:800px){
+    .main-flex{
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .container{
+        max-width: 1500px;
+    }
+    .col{
+        width: 100%;
+    }
+    .head{
+        text-align: left;
+    }
+    .intro-content{
+        text-align-last: auto;
+    }
+    .col1{
+        width: 40%;
+    }
+    .col2{
+        width: 60%;
+    }
+    section{
+        padding: 4rem 4rem;
+    }
+    .rc1{
+        position: relative;
+        right: 4rem;
+    }
+    .rc3{
+        position: relative;
+        left: 4rem;
+    }
+    
+    .all-card-container{
+          display: flex;
+          justify-content: space-between;
+          padding: 4rem 0;
+     }
+     .card-1{
+         position: relative;
+         top: -2rem;
+     }
+     .card-3{
+         position: relative;
+         top: 2rem;
+     }
+}
